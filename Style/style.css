@@ -16,6 +16,7 @@
   --accent-color-1: #001427;     
   --accent-color-2: #007ea7;    
   --accent-color-3: #00a8e8;
+  --accent-color-4: #f9dc5c;
 }
 
 body {
@@ -516,7 +517,7 @@ article {
 }
 
 .skills-percen {
-  color: var(--primary-color);
+  color: var(--accent-color-4);
 }
 
 article .icon {
@@ -726,7 +727,6 @@ footer p {
 
   footer {
     height: fit-content;
-    margin-bottom: 2rem;
   }
 
   .details-container,
@@ -743,7 +743,7 @@ footer p {
   }
 
   .contact-info-container p {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .skills-sub-title {
