@@ -17,29 +17,26 @@ var scrollToTopButton = document.getElementById("scrollToTopButton");
       });
 
 // Fade In Animation
-function fadeInOnScroll() {
+function fadeElementOnScroll() {
   var titles = document.querySelectorAll(".title");
 
-function isElementInViewport(element) {
-    var rect = element.getBoundingClientRect();
-    return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-}
-
-function checkScroll() {
+  function updateOpacity() {
     titles.forEach(function (title) {
-      if (isElementInViewport(title)) {
-        title.style.opacity = "1";
+      var rect = title.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom > 0) {
+        title.style.opacity = "1"; 
+      } else {
+        title.style.opacity = "0"; 
       }
     });
-}
+  }
+
+  function checkScroll() {
+    window.requestAnimationFrame(updateOpacity); 
+  }
 
   window.addEventListener("scroll", checkScroll);
-  checkScroll(); 
+  window.addEventListener("load", updateOpacity); 
 }
 
-window.addEventListener("load", fadeInOnScroll);
+fadeElementOnScroll();
