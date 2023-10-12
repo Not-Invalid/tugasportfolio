@@ -138,7 +138,7 @@ a:hover {
   display: block;
   padding: 10px;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: var(--primary-color);
   text-decoration: none;
   text-decoration-color: var(--primary-color);
@@ -264,6 +264,13 @@ section {
 .icon {
   cursor: pointer;
   height: 2rem;
+}
+
+.skills-icon-animation {
+  position: relative;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
 /* BUTTONS */
@@ -783,6 +790,10 @@ footer p {
     width: 6rem;
     padding: 0.5rem;
     height: 2.5rem;
+  }
+
+  .contact-info-container p {
+    font-size: 12px;
   }
   
 }

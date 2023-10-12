@@ -40,3 +40,32 @@ function fadeElementOnScroll() {
 }
 
 fadeElementOnScroll();
+
+
+// Function to handle the intersection observer callback
+// Function to handle the intersection observer callback for skills icons
+function handleSkillIcons(entries, observer) {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      const skillsIcon = entry.target;
+      skillsIcon.style.opacity = 1;
+      skillsIcon.style.transform = 'translateY(0)';
+    } else {
+      const skillsIcon = entry.target;
+      skillsIcon.style.opacity = 0;
+      skillsIcon.style.transform = 'translateY(50px)'; // Sesuaikan dengan animasi keluar yang diinginkan
+    }
+  });
+}
+
+// Set up the intersection observer for skills icons
+const skillsIcons = document.querySelectorAll('.skills-icon-animation');
+skillsIcons.forEach((icon) => {
+  const skillsIconObserver = new IntersectionObserver(handleSkillIcons, {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0, // Tidak diperlukan threshold dalam kasus ini
+  });
+  skillsIconObserver.observe(icon);
+});
+
