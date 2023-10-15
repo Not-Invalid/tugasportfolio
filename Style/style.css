@@ -13,7 +13,7 @@
   --secondary-color: #231942;   
   --accent-color-1: #001427;     
   --accent-color-2: #007ea7;    
-  --accent-color-3: #00a8e8;
+  --accent-color-3: #FFB000;
   --accent-color-4: #f9dc5c;
 }
 
@@ -301,7 +301,7 @@ section {
 
 .btn-color-1,
 .btn-color-2:hover {
-  background: var(--accent-color-3);
+  background: var(--secondary-color);
   color: var(--primary-color);
 }
 
@@ -311,7 +311,7 @@ section {
 
 .btn-color-2 {
   background: var(--accent-color-3);
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .btn-color-2:hover {
@@ -363,7 +363,6 @@ section {
   z-index: 50;
   bottom: 0;
   right: 0;
-
   margin: 20px;
 }
 
