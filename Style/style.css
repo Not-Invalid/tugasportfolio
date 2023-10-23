@@ -780,12 +780,12 @@ footer p {
   }
 
   .contact-container {
-    width: 400px;
+    width: fit-content;
   }
 
   footer {
     position: relative;
-    margin-top: 760px;
+    margin-top: 0;
   }
 }
 
@@ -849,7 +849,15 @@ footer p {
     text-align: justify;
   }
 
+  .contact-container {
+    width: 400px;
+  }
  
+  footer {
+    position: relative;
+    margin-top: 760px;
+  }
+  
 }
 
 @media screen and (max-width: 400px) {
