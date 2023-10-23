@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>R.Flii Portfolio</title>
     <link rel="stylesheet" href="Style/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="icon" type="icon/png" href="img/web assets/R logo.png">
   </head>
   <body>
@@ -17,6 +18,7 @@
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
+          <li><a href="#certificate">Certificate</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -36,6 +38,7 @@
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#certificate" onclick="toggleMenu()">Certificate</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
@@ -52,10 +55,10 @@
         <h1 class="title">Raffli Firmansyah</h1>
         <p class="section__text__p2">Student's</p>
         <div id="socials-container">
-          <a href="https://www.instagram.com/r_flii5/?hl=en" target="_blank"><img src="img/web assets/ig.png" alt="My Instagram" class="icon"/></a>
-          <a href="https://github.com/RaffDev31" target="_blank"><img src="img/web assets/github.png" alt="My Github" class="icon"/></a>
-          <a href="https://wa.me/6285771504500" target="_blank"><img src="img/web assets/Wa.png" alt="My Whatsapp" class="icon"/></a>
-        </div>
+          <a href="https://www.instagram.com/r_flii5/?hl=en" target="_blank"><i class="fab fa-instagram no-hover"></i></a>
+          <a href="https://github.com/RaffDev31" target="_blank"><i class="fab fa-github no-hover"></i></a>
+          <a href="https://wa.me/6285771504500" target="_blank"><i class="fab fa-whatsapp no-hover"></i></a>
+        </div>        
       </div>
     </section>
 
@@ -194,6 +197,34 @@
       </div>
     </section>
 
+   <!-- Certificates -->
+   <section id="certificate">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Certificates</h1>
+      <div class="certificates-details-container">
+        <div class="about-containers">
+          <div class="certificates-container color-container">
+            <div class="article-container">
+              <img src="img/certificate/Web Dasar img.png" alt="" class="certificates-img"/>
+            </div>
+            <h2 class="certificates-title">Dicoding Basic Web</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="window.open('certificate/Web Dasar.pdf', '_blank')">See Details</button>
+            </div>
+          </div>
+          <div class="certificates-container color-container">
+            <div class="article-container">
+              <img src="img/certificate/Beginner web.png" alt="" class="certificates-img"/>
+            </div>
+            <h2 class="certificates-title">Dicoding Beginner Web</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="window.open('certificate/Beginner Web.pdf', '_blank')">See Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+   </section>
+
     <!-- Projects -->
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
@@ -241,22 +272,21 @@
 
     <!-- Contact -->
     <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <a href="mailto:rafflitz99@gmail.com" class="contact-button">
-            <img src="img/web assets/email.png" alt="" class="icon" />
-            <p>Rafflitz99@gmail.com</p>
-          </a>
-        </div>
-        <div class="contact-info-container">
-          <a href="mailto:rafflitz99@gmail.com" class="contact-button">
-            <span class="arrow-submit">&#8594;</span>
-          </a>
+      <div class="contact-container">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3966.593861915057!2d106.653852!3d-6.185072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMTEnMDYuMyJTIDEwNsKwMzknMTMuOSJF!5e0!3m2!1sid!2sid!4v1697807277041!5m2!1sid!2sid" width="400" height="370" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="form-input">
+            <form>
+              <input name="name" type="text" class="feedback-input" placeholder="Name" />
+              <input name="email" type="text" class="feedback-input" placeholder="Email" />
+              <textarea name="text" class="feedback-input" placeholder="Comment" style="resize: none;"></textarea>
+              <input type="submit" value="SUBMIT" />
+            </form>
+          </div>
         </div>
       </div>
-      
     </section>
 
     <div class="arrow-button">

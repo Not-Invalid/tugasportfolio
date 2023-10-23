@@ -41,9 +41,7 @@ function fadeElementOnScroll() {
 
 fadeElementOnScroll();
 
-
-// Function to handle the intersection observer callback
-// Function to handle the intersection observer callback for skills icons
+// Icon Skills Animation
 function handleSkillIcons(entries, observer) {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -53,19 +51,31 @@ function handleSkillIcons(entries, observer) {
     } else {
       const skillsIcon = entry.target;
       skillsIcon.style.opacity = 0;
-      skillsIcon.style.transform = 'translateY(50px)'; // Sesuaikan dengan animasi keluar yang diinginkan
+      skillsIcon.style.transform = 'translateY(50px)';
     }
   });
 }
 
-// Set up the intersection observer for skills icons
 const skillsIcons = document.querySelectorAll('.skills-icon-animation');
 skillsIcons.forEach((icon) => {
   const skillsIconObserver = new IntersectionObserver(handleSkillIcons, {
     root: null,
     rootMargin: '0px',
-    threshold: 0, // Tidak diperlukan threshold dalam kasus ini
+    threshold: 0, 
   });
   skillsIconObserver.observe(icon);
 });
 
+// Change Text Animation
+const texts = ["Student", "Front End Developer", "Graphic Designer"];
+let count = 0;
+const textElement = document.querySelector("#profile .section__text__p2");
+
+function changeText() {
+  textElement.textContent = texts[count];
+  count = (count + 1) % texts.length;
+}
+
+changeText(); 
+
+setInterval(changeText, 1500);
