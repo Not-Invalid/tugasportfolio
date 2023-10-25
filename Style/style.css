@@ -663,7 +663,7 @@ article .icon {
 }
 
 [type="submit"] {
-  width: 100%;
+  width: 20%;
   background: var(--primary-color);
   border-radius: 2rem;
   border: 0;
@@ -673,6 +673,8 @@ article .icon {
   padding: 10px;
   margin-top: 10px;
   font-weight: 700;
+  margin-left: auto;
+  display: block;
 }
 
 [type="submit"]:hover {
@@ -783,6 +785,11 @@ footer p {
     width: fit-content;
   }
 
+  [type="submit"] {
+    width: 38%;
+    font-size: 20px;
+  }
+  
   footer {
     position: relative;
     margin-top: 0;
