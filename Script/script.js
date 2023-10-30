@@ -67,7 +67,7 @@ skillsIcons.forEach((icon) => {
 });
 
 // Change Text Animation
-const texts = ["Student", "Front End Developer", "Graphic Designer"];
+const texts = ["Student's", "Front End Developer", "Graphic Designer"];
 let count = 0;
 const textElement = document.querySelector("#profile .section__text__p2");
 
