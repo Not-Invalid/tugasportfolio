@@ -527,14 +527,14 @@ article .icon {
 }
 
 .certificates-container {
-  padding: 1.5rem;
+  padding: 1rem;
   flex: 1;
   background: var(--secondary-color);
   border-radius: 2rem;
   border: var(--secondary-color);
   border-color: var(--secondary-color);
   text-align: center;
-  height: 360px;
+  height: 300px;
   margin-top: 80px;
 }
 
